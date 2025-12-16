@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Reservation System</title>
+    <title>Login - Online Reservation</title>
 </head>
 
-<body style="background-color:#ffffff; padding:20px;">
+<body style="
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    font-family: Arial, sans-serif;
+">
 
-    <h1>Train Ticket Reservation</h1>
+    <div style="
+        background:white;
+        padding:30px;
+        width:300px;
+        border-radius:12px;
+        text-align:center;
+        box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    ">
+        <h2 style="margin-bottom:20px;">Login</h2>
 
-    <label>Name:</label>
-    <input type="text"><br><br>
+        <input type="text" id="username" placeholder="Username"
+               style="width:100%; padding:10px; margin-bottom:15px;">
 
-    <label>Train Number:</label>
-    <input type="text"><br><br>
+        <input type="password" id="password" placeholder="Password"
+               style="width:100%; padding:10px; margin-bottom:20px;">
 
-    <label>Class:</label>
-    <input type="text"><br><br>
-
-    <button onclick="reserve()">Reserve</button>
-    <button onclick="cancel()">Cancel</button>
+        <button onclick="validateLogin()"
+                style="
+                    padding:10px;
+                    width:100%;
+                    border:none;
+                    border-radius:6px;
+                    background:#1d2671;
+                    color:white;
+                    font-size:16px;
+                    cursor:pointer;
+                ">
+            Login
+        </button>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

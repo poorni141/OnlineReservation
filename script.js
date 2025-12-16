@@ -3,7 +3,7 @@ function validateLogin() {
     var password = document.getElementById("password").value;
 
     if (username !== "" && password !== "") {
-        window.location.href = "index.html";
+        window.location.href = "reservation.html";
     } else {
         alert("Please enter username and password");
     }

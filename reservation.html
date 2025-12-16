@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Reservation</title>
+</head>
+
+<body style="
+    margin:0;
+    min-height:100vh;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    font-family: Arial, sans-serif;
+">
+
+    <div style="
+        background:white;
+        max-width:400px;
+        margin:60px auto;
+        padding:30px;
+        border-radius:12px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    ">
+        <h2 style="text-align:center;">Train Reservation</h2>
+
+        <input type="text" placeholder="Passenger Name"
+               style="width:100%; padding:10px; margin-bottom:15px;">
+
+        <input type="text" placeholder="Train Number"
+               style="width:100%; padding:10px; margin-bottom:15px;">
+
+        <input type="text" placeholder="Class"
+               style="width:100%; padding:10px; margin-bottom:20px;">
+
+        <button onclick="reserve()"
+                style="padding:10px; width:100%; margin-bottom:10px;">
+            Reserve Ticket
+        </button>
+
+        <button onclick="cancel()"
+                style="padding:10px; width:100%;">
+            Cancel Ticket
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
