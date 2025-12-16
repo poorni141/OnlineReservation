@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Train Reservation</title>
+    <title>Login - Online Reservation</title>
 </head>
-<body>
 
-<h2>Train Ticket Reservation</h2>
+<body style="background-color:#f2f2f2; text-align:center;">
 
-Name: <input type="text"><br><br>
-Train Number: <input type="text"><br><br>
-Class: <input type="text"><br><br>
+    <h2>Login</h2>
 
-<button>Reserve</button>
-<button>Cancel</button>
+    <label>Username:</label>
+    <input type="text" id="username"><br><br>
+
+    <label>Password:</label>
+    <input type="password" id="password"><br><br>
+
+    <button onclick="validateLogin()">Login</button>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
