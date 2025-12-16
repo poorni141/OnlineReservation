@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Reservation System</title>
+    <title>Login - Online Reservation</title>
 </head>
 <body>
-    <h2>Train Ticket Reservation</h2>
 
-    Name:
-    <input type="text" id="name"><br><br>
+<h2>Login</h2>
 
-    Train Number:
-    <input type="text" id="train"><br><br>
+<form onsubmit="return login()">
+    Username: <input type="text" id="user" required><br><br>
+    Password: <input type="password" id="pass" required><br><br>
+    <button type="submit">Login</button>
+</form>
 
-    Class:
-    <input type="text" id="classType"><br><br>
+<script>
+function login() {
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
 
-    <button onclick="reserve()">Reserve</button>
-    <button onclick="cancel()">Cancel</button>
+    if (u === "admin" && p === "1234") {
+        window.location.href = "login.html";
+        return false;
+    } else {
+        alert("Invalid Login");
+        return false;
+    }
+}
+</script>
 
-    <p id="output"></p>
-
-    <script src="script.js"></script>
 </body>
 </html>
